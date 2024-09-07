@@ -29,10 +29,11 @@
         }
         .video-wrapper {
             display: flex;
+            flex-direction: column; /* Arrange videos vertically */
             gap: 10px;
         }
         .video-wrapper video {
-            width: 48%;
+            width: 100%; /* Set to full width of the container */
             height: auto;
             border: 1px solid #ddd;
             border-radius: 4px;
@@ -49,11 +50,9 @@
 <body>
 
 <div class="container">
-    <h1>Speech-to-Vocal Tract Visualization Using Deep
-Learning for Pronunciation Training</h1>
+    <h1>Speech-to-Vocal Tract Visualization Using Deep Learning for Pronunciation Training</h1>
     
-    <p><strong>About:</strong> Project page for the paper "Speech-to-Vocal Tract Visualization Using Deep
-Learning for Pronunciation Training".</p>
+    <p><strong>About:</strong> Project page for the paper "Speech-to-Vocal Tract Visualization Using Deep Learning for Pronunciation Training".</p>
 
     <p><strong>Dataset Link:</strong> <a href="https://drive.google.com/file/d/110aLzNsz1_xGGsZ_K-ITi_yWJIccHDl_/view?usp=drive_link" target="_blank">Download the Dataset</a></p>
 
@@ -65,7 +64,11 @@ Learning for Pronunciation Training".</p>
                 Your browser does not support the video tag.
             </video>
             <video controls>
-                <source src="VIDEO_2.mp4" type="video/mp4">
+                <source src="video_1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls>
+                <source src="video_2.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -75,3 +78,4 @@ Learning for Pronunciation Training".</p>
 
 </body>
 </html>
+

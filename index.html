@@ -31,11 +31,11 @@
         .video-wrapper {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 10px;
             align-items: center;
         }
         .video-wrapper video {
-            width: 50%;
+            width: 80%; /* Adjust video size */
             height: auto;
             border: 1px solid #ddd;
             border-radius: 4px;
@@ -43,12 +43,11 @@
         }
         .transcription {
             text-align: left;
-            max-width: 90%;
-            margin-top: 10px;
-            padding: 10px;
-            background: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 4px;
+            margin-top: 5px;
+            width: 80%;
+            margin: 0 auto; /* Center the transcription */
+            color: #333; /* Text color consistent with body */
+            font-size: 14px; /* Slightly smaller font size for the transcription */
         }
         a {
             color: #0066cc;
@@ -92,7 +91,7 @@
                 Your browser does not support the video tag.
             </video>
             <div class="transcription">
-                <p><strong>Librispeech Example 1.</p>
+                <p>Librispeech Example 1.</p>
             </div>
             
             <video controls>
@@ -100,8 +99,9 @@
                 Your browser does not support the video tag.
             </video>
             <div class="transcription">
-                <p><strong>Librispeech Example 2.</p>
+                <p>Librispeech Example 2.</p>
             </div>
+            
         </div>
     </div>
 
